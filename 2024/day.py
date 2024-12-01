@@ -1,14 +1,13 @@
+import sys
+sys.path.append('../')
+from library import * # type: ignore
 use_sample = True
 
 def part1(filename: str = 'input.txt', mode: str = 'r'):
-    input = read_file()
+    input = Library.read_file(filename, mode)
 
 def part2(filename: str = 'input.txt', mode: str = 'r'):
-    input = read_file()
-
-def read_file(filename = 'input.txt', mode = 'r'):
-    input = open(filename, mode)
-    return input
+    input = Library.read_file(filename, mode)
 
 print(f'Sample: {use_sample}')
 
