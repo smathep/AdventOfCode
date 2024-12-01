@@ -4,6 +4,7 @@ def part1():
     # build seed-to-soil map
     seed_to_soil = {}
     for line in input:
+
         print(line)
 
 def part2():
